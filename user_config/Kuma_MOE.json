@@ -1,0 +1,8 @@
+{
+    "dataset_class": "KumaDataset",
+    "metrics": ["Recall", "F1", "NDCG","Precision"],
+    "topk": [1,5,10],
+    "topk_file":"./data/llmmob/Kumamoto/subzone.csv",
+    "num_workers":4
+
+}

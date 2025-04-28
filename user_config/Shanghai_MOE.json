@@ -1,0 +1,8 @@
+{
+    "dataset_class": "ShanghaiDataset",
+    "metrics": ["Recall", "F1", "NDCG","Precision"],
+    "topk": [1,5,10],
+    "topk_file":"./data/llmmob/Shanghai/llmmob/Shanghai/shanghai_grid.csv",
+    "num_workers":4
+
+}
