@@ -288,7 +288,7 @@ def run_model_NextlocLLM_MER_lora(config_file=None, other_args=None):
 
     train_loader, vali_loader, test_loader, model, model_optim,accelerator=prepare_model(config,train_data, valid_data, test_data,data_feature, accelerator)
     '''
-    model_path = config.get('resume_path', '/home_nfs/liushuai/NextlocMOE/acce_file/NextlocMOE.pth')
+    model_path = config.get('resume_path', './NextlocMOE/acce_file/NextlocMOE.pth')
     if os.path.exists(model_path):
         accelerator.print(f"✅ Resuming from checkpoint: {model_path}")
         unwrapped_model = accelerator.unwrap_model(model)
